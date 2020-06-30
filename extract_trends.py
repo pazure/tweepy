@@ -2,10 +2,10 @@ import tweepy
 
 
 
-CONSUMER_KEY = 'A7VXArZ0vCW2o5zpxBct3Mm6R'
-CONSUMER_SECRET = 'SLZ9PcqzWAdixoKKwyT1VJoeHqiNz0uaXaoieTbxvKYouZ3uYA'
-ACCESS_KEY = '1270144792815636487-1LZF0AEeRM88hfUKDCDhyzjHlJEKyy'
-ACCESS_SECRET = '9GPgKScJOXzJ05CoNAj5GbIJfH0vuggaLhU4yIzL7etQc'
+CONSUMER_KEY = 'your conumer key'
+CONSUMER_SECRET = 'your consumer secret'
+ACCESS_KEY = 'your access key'
+ACCESS_SECRET = 'you access secret'
 
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
@@ -14,7 +14,7 @@ api = tweepy.API(auth)
 
 # trends = api.trends_available()
 
-trends_gh = api.trends_place(23424824)
+trends_gh = api.trends_place(WOEID)
 
 t0 = trends_gh[0]
 TRENDS = t0['trends']
